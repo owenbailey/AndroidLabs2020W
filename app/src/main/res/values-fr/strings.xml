@@ -3,4 +3,10 @@
     <string name="app_name">AndroidLabs2020W</string>
     <string name="hello_message">Bonjour!</string>
     <string name="ButtonText">Je suis un boutton</string>
+    <string name="HintText">Ecris ici</string>
+    <string name="TopText">Regarde mon GUI</string>
+    <string name="ButtonText2">Cliquez ici</string>
+    <string name="CheckBoxText">Cocher ca</string>
+    <string name="SwitchText">Interrupter on / off</string>
+    <string name="toast_message">Ici est plus d\'information</string>
 </resources>
