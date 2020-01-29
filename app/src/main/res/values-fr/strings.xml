@@ -9,4 +9,9 @@
     <string name="CheckBoxText">Cocher ca</string>
     <string name="SwitchText">Interrupter on / off</string>
     <string name="toast_message">Ici est plus d\'information</string>
+    <string name="emailTextViewLab3">Enter your email address:</string>
+    <string name="emailEditTextLab3">Type email here</string>
+    <string name="passwordTextViewLab3">Type your password:</string>
+    <string name="passwordEditTextLab3"></string>
+    <string name="prefEmail">EmailAddress</string>
 </resources>

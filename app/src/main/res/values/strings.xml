@@ -8,4 +8,10 @@
     <string name="CheckBoxText">Check this out!</string>
     <string name="SwitchText">Switch on / off</string>
     <string name="toast_message">Here is more information</string>
+    <string name="emailTextViewLab3">Enter your email address:</string>
+    <string name="emailEditTextLab3">Type email here</string>
+    <string name="passwordTextViewLab3">Type your password:</string>
+    <string name="passwordEditTextLab3"></string>
+    <string name="prefEmail">EmailAddress</string>
+
 </resources>
