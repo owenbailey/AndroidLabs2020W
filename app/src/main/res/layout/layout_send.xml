@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_rightOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="" />
 </RelativeLayout>

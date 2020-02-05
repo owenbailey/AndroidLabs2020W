@@ -20,7 +20,7 @@ public class ChatRoomActivity extends AppCompatActivity {
     ArrayList<Message> MessageObj = new ArrayList<>();
 
     ListAdapter myAdapter = new ListAdapter() {
-    }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class ChatRoomActivity extends AppCompatActivity {
         Button sb = (Button) findViewById(R.id.sendButton);
         sb.setOnClickListener(v -> {
 
-            elements.add("Hi");
+            MessageObj.add();
             myAdapter.notifyDataSetChanged();
 
 
@@ -49,14 +49,15 @@ public class ChatRoomActivity extends AppCompatActivity {
 
     public class Message{
 
-
+        Boolean isSend;
+//boolean isSend
     }
 
-    private class MyListAdapter extends BaseAdapter {
+    private class myAdapter extends BaseAdapter {
 
         public int getCount() { return MessageObj.size();}
 
-        public Object getItem(int position) { return "This is row " + position; }
+        public Message getItem(int position) { return  MessageObj.get(position); }
 
         public long getItemId(int position) { return (long) position; }
 
@@ -64,11 +65,15 @@ public class ChatRoomActivity extends AppCompatActivity {
         {
             LayoutInflater inflater = getLayoutInflater();
 
+            Message thisrow = getItem(position);
             //make a new row:
-            View newView = inflater.inflate(R.layout., parent, false);
+            View newView =null;
+            if (thisrow.isSend())
+              newView = inflater.inflate(R.layout.layout_send, parent, false);
+            else
 
             //set what the text should be for this row:
-            TextView tView = newView.findViewById(R.id.textGoesHere);
+            TextView tView = newView.findViewById(R.id.textMessageField);
             tView.setText( getItem(position).toString() );
 
             //return it to be put in the table
