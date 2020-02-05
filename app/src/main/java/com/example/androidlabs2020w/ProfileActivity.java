@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
@@ -17,6 +18,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     ImageButton mImageButton = null;
 
+    Button goToChat = null;
     private void dispatchTakePictureIntent(){
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
@@ -43,6 +45,14 @@ public class ProfileActivity extends AppCompatActivity {
         Log.e(ProfileActivity, "In function: onCreate()");
 //You will have to create a static String variable called ACTIVITY_NAME, and set it equal to the Activity’s name. In this case:
 
+        Button gtc = (Button) findViewById(R.id.goToChatButton);
+        gtc.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent goToChatRoom = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                startActivity(goToChatRoom);
+            }
+        });
     }
 
 
