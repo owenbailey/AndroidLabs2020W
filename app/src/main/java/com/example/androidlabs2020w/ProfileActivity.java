@@ -29,6 +29,9 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.activity_profile);
 
 
@@ -51,6 +54,17 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goToChatRoom = new Intent(ProfileActivity.this, ChatRoomActivity.class);
                 startActivity(goToChatRoom);
+            }
+        });
+
+//        button to go to weather forecast
+        Button goToWeather = (Button) findViewById(R.id.weatherButton);
+        goToWeather.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent goToWeatherActivity = new Intent(ProfileActivity.this, WeatherForecast.class);
+
+                startActivity(goToWeatherActivity);
             }
         });
     }

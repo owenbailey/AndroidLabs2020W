@@ -11,14 +11,13 @@
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
 
-        app:srcCompat="@drawable/row_send" />
+        android:src="@drawable/row_send" />
 
     <TextView
         android:id="@+id/textMessageField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
+
         android:layout_toRightOf="@+id/imageView"
-        android:inputType="textPersonName"
         android:text="" />
 </RelativeLayout>
